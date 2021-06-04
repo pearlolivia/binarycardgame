@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eceb666a-5578-4f2a-a677-4e09c0f61a64" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1t4U3HFT8icsMQX82coyAY0OpNf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eceb666a-5578-4f2a-a677-4e09c0f61a64" name="Default Changelist" comment="" />
+      <created>1622027654431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622027654431</updated>
+      <workItem from="1622027656171" duration="3810000" />
+      <workItem from="1622042415003" duration="568000" />
+      <workItem from="1622049627113" duration="71000" />
+      <workItem from="1622111138162" duration="1089000" />
+      <workItem from="1622288719210" duration="1805000" />
+      <workItem from="1622740099904" duration="1068000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="649" y="265" key="com.intellij.ide.util.TipDialog" timestamp="1622803770431">
+      <screen x="0" y="23" width="1440" height="817" />
+    </state>
+    <state x="649" y="264" key="com.intellij.ide.util.TipDialog/0.23.1440.815@0.23.1440.815" timestamp="1622288721375" />
+    <state x="649" y="265" key="com.intellij.ide.util.TipDialog/0.23.1440.817@0.23.1440.817" timestamp="1622803770431" />
+    <state x="649" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.827@0.23.1440.827" timestamp="1622111137890" />
+    <state x="649" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.828@0.23.1440.828" timestamp="1622049628594" />
+  </component>
+</project>
