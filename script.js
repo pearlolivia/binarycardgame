@@ -32,7 +32,7 @@ function flipCard() {
     }
     let flippedCards = document.querySelectorAll('.flip');
 
-    if(flippedCards[0].dataset.framework === '2' && flippedCards[1].dataset.framework === '1') {
+    if(flippedCards[0].dataset.framework === '2' && flippedCards[1].dataset.framework === '1' && level1) {
         //correct cards picked to complete level 1 (add to 3)
         level1 = false;
         level1complete = true;
