@@ -1,0 +1,7 @@
+{
+  "homepage": "http://pearlolivia.github.io/binarygame",
+  "scripts": {
+    "build": "mocha build",
+    "test": "mocha test"
+  }
+}
