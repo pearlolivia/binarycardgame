@@ -6,11 +6,19 @@ let level2 = false;
 let level2complete = false;
 let level3 = false;
 let level3complete = false;
+let level4 = false;
+let level4complete = false;
+let level5 = false;
+let level5complete = false;
+let level6 = false;
+let level6complete = false;
 let freestyle = false;
 
 function flipCard() {
+    //flip clicked card
     this.classList.toggle('flip');
-    console.log(document.getElementsByClassName('binary-card 16'));
+
+    //flip binary code card below with corresponding spot card
     switch (this.dataset.framework) {
         case '16':
             document.getElementsByClassName('binary-card 16')[0].classList.toggle('flip');
@@ -30,17 +38,21 @@ function flipCard() {
         default:
             return
     }
-    let flippedCards = document.querySelectorAll('.flip');
 
+    //check value of flipped cards and progress to next level if conditions met
+    let flippedCards = document.querySelectorAll('.flip');
     if(flippedCards[0].dataset.framework === '2' && flippedCards[1].dataset.framework === '1' && level1) {
         //correct cards picked to complete level 1 (add to 3)
+        //current level no longer 1 , level 1 now complete and level 2 started
         level1 = false;
         level1complete = true;
         level2 = true;
+        //return all cards to unflipped state
         setTimeout(() => {
             flippedCards.forEach(card => card.classList.remove('flip'));
         }, 800);
-        Array.prototype.forEach.call(images,img => img.style.background = "red");
+        //change colour of cards to signify new level
+        Array.prototype.forEach.call(images,img => img.style.background = "#ff5456");
     } else if(flippedCards[0].dataset.framework === '4'
         && flippedCards[1].dataset.framework === '2'
         && level1complete
@@ -54,7 +66,7 @@ function flipCard() {
         setTimeout(() => {
             flippedCards.forEach(card => card.classList.remove('flip'));
         }, 800);
-        Array.prototype.forEach.call(images,img => img.style.background = "yellow");
+        Array.prototype.forEach.call(images,img => img.style.background = "#ffbf64");
     } else if(flippedCards[0].dataset.framework === '4'
         && flippedCards[1].dataset.framework === '2'
         && flippedCards[2].dataset.framework === '1'
@@ -65,23 +77,72 @@ function flipCard() {
         level1 = false;
         level3 = false;
         level3complete = true;
+        level4 = true;
+        setTimeout(() => {
+            flippedCards.forEach(card => card.classList.remove('flip'));
+        }, 800);
+        Array.prototype.forEach.call(images,img => img.style.background = "#FFFD80");
+    } else if(flippedCards[0].dataset.framework === '8'
+    && flippedCards[1].dataset.framework === '2'
+    && flippedCards[2].dataset.framework === '1'
+    && flippedCards.length === 6
+    && level3complete
+    && !level4complete) {
+        //correct cards picked to complete level 4 (add to 11)
+        level4 = false;
+        level4complete = true;
+        level5 = true;
+        setTimeout(() => {
+            flippedCards.forEach(card => card.classList.remove('flip'));
+        }, 800);
+        Array.prototype.forEach.call(images,img => img.style.background = "#b4f0a7");
+    } else if (flippedCards[0].dataset.framework === '16'
+    && flippedCards.length === 2
+    && level4complete
+    && !level5complete) {
+        //correct cards picked to complete level 5 (add to 16)
+        level5 = false;
+        level5complete = true;
+        level6 = true;
+        setTimeout(() => {
+            flippedCards.forEach(card => card.classList.remove('flip'));
+        }, 800);
+        Array.prototype.forEach.call(images,img => img.style.background = "#cc99ff");
+    } else if (flippedCards[0].dataset.framework === '16'
+    && flippedCards[1].dataset.framework === '4'
+    && flippedCards.length === 4
+    && level5complete
+    && !freestyle) {
+        //correct cards picked to complete level 6 (add to 20)
+        level6 = false;
+        level6complete = true;
         freestyle = true;
         setTimeout(() => {
             flippedCards.forEach(card => card.classList.remove('flip'));
         }, 800);
-        Array.prototype.forEach.call(images,img => img.style.background = "green");
+        Array.prototype.forEach.call(images,img => img.style.background = "#1AF029");
     }
 }
 
 function checkLevel() {
     if(!level1 && level2 && level1complete) {
-        document.getElementById("instructions").innerHTML = "2) Flip the cards to make a total of 6";
+        document.getElementById("instructions").innerHTML = "2) Add up to <span style=\"font-size: 60px\">6</span>";
     } else if(!level1 && !level2 && level3 && level1complete && level2complete) {
-        document.getElementById("instructions").innerHTML = "3) Flip the cards to make a total of 7";
-    } else if (!level1 && !level2 && !level3 && level1complete && level2complete && level3complete && freestyle) {
-        document.getElementById("instructions").innerHTML = "Freestyle! Play around with your counting";
+        document.getElementById("instructions").innerHTML = "3) Add up to <span style=\"font-size: 60px\">7</span>";
+    } else if (!level1 && !level2 && !level3 && level4 && level1complete && level2complete && level3complete && !level4complete) {
+        document.getElementById("instructions").innerHTML = "4) Add up to <span style=\"font-size: 60px\">11</span>";
+    } else if (!level1 && !level2 && !level3 && !level4 && level5 && level1complete && level2complete && level3complete && level4complete && !level5complete) {
+        document.getElementById("instructions").innerHTML = "5) Add up to <span style=\"font-size: 60px\">16</span>";
+    } else if (!level1 && !level2 && !level3 && !level4 && !level5 && level6 && level1complete && level2complete && level3complete && level4complete && level5complete && !level6complete) {
+        document.getElementById("instructions").innerHTML = "6) Add up to <span style=\"font-size: 60px\">20</span>";
+    } else if(!level1 && !level2 && !level3 && !level4 && !level5 && !level6 && freestyle && level1complete && level2complete && level3complete && level4complete && level5complete && level6complete) {
+        document.getElementById("instructions").innerHTML = "Freestyle!";
     }
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 cards.forEach(card => card.addEventListener('click', checkLevel));
+
+//deployment
+//work in main branch, merge changes with deploy branch
+//run gh-pages-deploy in deploy branch

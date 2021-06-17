@@ -3,9 +3,37 @@
   <component name="ChangeListManager">
     <list default="true" id="eceb666a-5578-4f2a-a677-4e09c0f61a64" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/.idea/$CACHE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/.idea/binarygame.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/.idea/externalDependencies.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/angular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/aurelia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/backbone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/blank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/dot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/eightDot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/ember.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/fourDot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/js-badge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/one.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/react.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/sixteenDot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/twoDot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/zero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/styles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +107,10 @@
       <workItem from="1622111138162" duration="1089000" />
       <workItem from="1622288719210" duration="1805000" />
       <workItem from="1622740099904" duration="1068000" />
-      <workItem from="1623422164486" duration="3396000" />
+      <workItem from="1623422164486" duration="4262000" />
+      <workItem from="1623765576398" duration="611000" />
+      <workItem from="1623853862825" duration="105000" />
+      <workItem from="1623945899890" duration="1910000" />
     </task>
     <servers />
   </component>
@@ -87,11 +118,12 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="649" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1623422165390">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="649" y="265" key="com.intellij.ide.util.TipDialog" timestamp="1623945901269">
+      <screen x="0" y="23" width="1440" height="817" />
     </state>
     <state x="649" y="264" key="com.intellij.ide.util.TipDialog/0.23.1440.815@0.23.1440.815" timestamp="1622288721375" />
-    <state x="649" y="265" key="com.intellij.ide.util.TipDialog/0.23.1440.817@0.23.1440.817" timestamp="1622803770431" />
+    <state x="649" y="265" key="com.intellij.ide.util.TipDialog/0.23.1440.817@0.23.1440.817" timestamp="1623945901269" />
+    <state x="649" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1623765577197" />
     <state x="649" y="267" key="com.intellij.ide.util.TipDialog/0.23.1440.823@0.23.1440.823" timestamp="1623422165390" />
     <state x="649" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.827@0.23.1440.827" timestamp="1622111137890" />
     <state x="649" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.828@0.23.1440.828" timestamp="1622049628594" />
