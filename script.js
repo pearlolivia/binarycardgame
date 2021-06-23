@@ -1,5 +1,8 @@
 const cards = document.querySelectorAll('.binary-card');
-const images = document.getElementsByTagName('img');
+const images = document.querySelectorAll('.card');
+const stars = document.querySelectorAll('.star');
+stars.forEach(star => star.style.display = 'none');
+
 let level1 = true;
 let level1complete = false;
 let level2 = false;
@@ -13,6 +16,17 @@ let level5complete = false;
 let level6 = false;
 let level6complete = false;
 let freestyle = false;
+
+function nextLevel(cards, level, colour) {
+    if(window.confirm("Congrats you've completed level " + level + "! Click OK to go to the next level")) {
+        setTimeout(() => {
+            cards.forEach(card => card.classList.remove('flip'));
+        }, 800);
+        //change colour of cards to signify new level
+        Array.prototype.forEach.call(images, img => img.style.background = colour);
+        document.getElementsByClassName('star ' + level + 'star')[0].style.display = 'block';
+    }
+}
 
 function flipCard() {
     //flip clicked card
@@ -47,12 +61,9 @@ function flipCard() {
         level1 = false;
         level1complete = true;
         level2 = true;
-        //return all cards to unflipped state
-        setTimeout(() => {
-            flippedCards.forEach(card => card.classList.remove('flip'));
-        }, 800);
-        //change colour of cards to signify new level
-        Array.prototype.forEach.call(images,img => img.style.background = "#ff5456");
+        //return all cards to unflipped state and change card colour
+        nextLevel(flippedCards,'1','#FF5456');
+        //document.getElementsByClassName('star 1star')[0].style.display = 'block';
     } else if(flippedCards[0].dataset.framework === '4'
         && flippedCards[1].dataset.framework === '2'
         && level1complete
@@ -63,10 +74,7 @@ function flipCard() {
         level2 = false;
         level2complete = true;
         level3 = true;
-        setTimeout(() => {
-            flippedCards.forEach(card => card.classList.remove('flip'));
-        }, 800);
-        Array.prototype.forEach.call(images,img => img.style.background = "#ffbf64");
+        nextLevel(flippedCards,'2','#FFBF64');
     } else if(flippedCards[0].dataset.framework === '4'
         && flippedCards[1].dataset.framework === '2'
         && flippedCards[2].dataset.framework === '1'
@@ -78,10 +86,7 @@ function flipCard() {
         level3 = false;
         level3complete = true;
         level4 = true;
-        setTimeout(() => {
-            flippedCards.forEach(card => card.classList.remove('flip'));
-        }, 800);
-        Array.prototype.forEach.call(images,img => img.style.background = "#FFFD80");
+        nextLevel(flippedCards,'3','#FFFD80');
     } else if(flippedCards[0].dataset.framework === '8'
     && flippedCards[1].dataset.framework === '2'
     && flippedCards[2].dataset.framework === '1'
@@ -92,10 +97,7 @@ function flipCard() {
         level4 = false;
         level4complete = true;
         level5 = true;
-        setTimeout(() => {
-            flippedCards.forEach(card => card.classList.remove('flip'));
-        }, 800);
-        Array.prototype.forEach.call(images,img => img.style.background = "#b4f0a7");
+        nextLevel(flippedCards,'4','#b4f0a7');
     } else if (flippedCards[0].dataset.framework === '16'
     && flippedCards.length === 2
     && level4complete
@@ -104,10 +106,7 @@ function flipCard() {
         level5 = false;
         level5complete = true;
         level6 = true;
-        setTimeout(() => {
-            flippedCards.forEach(card => card.classList.remove('flip'));
-        }, 800);
-        Array.prototype.forEach.call(images,img => img.style.background = "#cc99ff");
+        nextLevel(flippedCards,'5','#cc99ff');
     } else if (flippedCards[0].dataset.framework === '16'
     && flippedCards[1].dataset.framework === '4'
     && flippedCards.length === 4
@@ -117,10 +116,7 @@ function flipCard() {
         level6 = false;
         level6complete = true;
         freestyle = true;
-        setTimeout(() => {
-            flippedCards.forEach(card => card.classList.remove('flip'));
-        }, 800);
-        Array.prototype.forEach.call(images,img => img.style.background = "#1AF029");
+        nextLevel(flippedCards,'6','#1AF029');
     }
 }
 
