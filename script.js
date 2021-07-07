@@ -2,6 +2,8 @@ const cards = document.querySelectorAll('.binary-card');
 const images = document.querySelectorAll('.card');
 const stars = document.querySelectorAll('.star');
 stars.forEach(star => star.style.display = 'none');
+const freestyleButton = document.querySelector('.freestyle');
+const mainGameButton = document.querySelector('.main-game');
 
 let level1 = true;
 let level1complete = false;
@@ -121,7 +123,9 @@ function flipCard() {
 }
 
 function checkLevel() {
-    if(!level1 && level2 && level1complete) {
+    if(level1 && !level1complete) {
+        document.getElementById("instructions").innerHTML = "1) Add up to <span style=\"font-size: 60px\">3</span>";
+    } else if(!level1 && level2 && level1complete) {
         document.getElementById("instructions").innerHTML = "2) Add up to <span style=\"font-size: 60px\">6</span>";
     } else if(!level1 && !level2 && level3 && level1complete && level2complete) {
         document.getElementById("instructions").innerHTML = "3) Add up to <span style=\"font-size: 60px\">7</span>";
@@ -135,6 +139,58 @@ function checkLevel() {
         document.getElementById("instructions").innerHTML = "Freestyle!";
     }
 }
+
+function goToFreestyle() {
+    level1 = false;
+    level2 = false;
+    level3 = false;
+    level4 = false;
+    level5 = false;
+    level6 = false;
+    freestyle = true;
+    level1complete = true;
+    level2complete = true;
+    level3complete = true;
+    level4complete = true;
+    level5complete = true;
+    level6complete = true;
+    Array.prototype.forEach.call(images, img => img.style.background = '#1AF029');
+    let flippedCards = document.querySelectorAll('.flip');
+    setTimeout(() => {
+        flippedCards.forEach(card => card.classList.remove('flip'));
+    }, 500);
+    stars.forEach(star => star.style.display = 'none');
+}
+
+function goToMainGame() {
+    level1 = true;
+    level2 = false;
+    level3 = false;
+    level4 = false;
+    level5 = false;
+    level6 = false;
+    freestyle = false;
+    level1complete = false;
+    level2complete = false;
+    level3complete = false;
+    level4complete = false;
+    level5complete = false;
+    level6complete = false;
+    Array.prototype.forEach.call(images, img => img.style.background = '#1c7ccc');
+    let flippedCards = document.querySelectorAll('.flip');
+    setTimeout(() => {
+        flippedCards.forEach(card => card.classList.remove('flip'));
+    }, 500);
+}
+
+freestyleButton.addEventListener("click", () => {
+    goToFreestyle();
+    checkLevel();
+});
+mainGameButton.addEventListener("click", () => {
+    goToMainGame();
+    checkLevel();
+});
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 cards.forEach(card => card.addEventListener('click', checkLevel));

@@ -24,6 +24,7 @@
       <change beforePath="$PROJECT_DIR$/dist/images/one.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/images/react.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/images/sixteenDot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/star.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/images/twoDot.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/images/zero.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
@@ -874,7 +875,9 @@
       <workItem from="1623765576398" duration="611000" />
       <workItem from="1623853862825" duration="105000" />
       <workItem from="1623945899890" duration="1910000" />
-      <workItem from="1624460691504" duration="3063000" />
+      <workItem from="1624460691504" duration="3436000" />
+      <workItem from="1625057559626" duration="319000" />
+      <workItem from="1625657867955" duration="2975000" />
     </task>
     <servers />
   </component>
@@ -882,12 +885,16 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="649" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1624460756850">
+    <state x="739" y="159" key="RollbackChangesDialog" timestamp="1625057711208">
+      <screen x="0" y="23" width="1440" height="817" />
+    </state>
+    <state x="739" y="159" key="RollbackChangesDialog/0.23.1440.817@0.23.1440.817" timestamp="1625057711208" />
+    <state x="649" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1625657868439">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="649" y="264" key="com.intellij.ide.util.TipDialog/0.23.1440.815@0.23.1440.815" timestamp="1622288721375" />
-    <state x="649" y="265" key="com.intellij.ide.util.TipDialog/0.23.1440.817@0.23.1440.817" timestamp="1623945901269" />
-    <state x="649" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1624460756850" />
+    <state x="649" y="265" key="com.intellij.ide.util.TipDialog/0.23.1440.817@0.23.1440.817" timestamp="1625057563574" />
+    <state x="649" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1625657868439" />
     <state x="649" y="267" key="com.intellij.ide.util.TipDialog/0.23.1440.823@0.23.1440.823" timestamp="1623422165390" />
     <state x="649" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.827@0.23.1440.827" timestamp="1622111137890" />
     <state x="649" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.828@0.23.1440.828" timestamp="1622049628594" />
