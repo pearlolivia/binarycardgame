@@ -796,7 +796,6 @@
       <change beforePath="$PROJECT_DIR$/dist/script.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -877,7 +876,7 @@
       <workItem from="1623945899890" duration="1910000" />
       <workItem from="1624460691504" duration="3436000" />
       <workItem from="1625057559626" duration="319000" />
-      <workItem from="1625657867955" duration="2975000" />
+      <workItem from="1625657867955" duration="3144000" />
     </task>
     <servers />
   </component>

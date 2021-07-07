@@ -181,6 +181,7 @@ function goToMainGame() {
     setTimeout(() => {
         flippedCards.forEach(card => card.classList.remove('flip'));
     }, 500);
+    stars.forEach(star => star.style.display = 'none');
 }
 
 freestyleButton.addEventListener("click", () => {
